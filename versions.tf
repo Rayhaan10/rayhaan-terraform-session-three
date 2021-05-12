@@ -1,4 +1,6 @@
 # provider provisions here
 terraform {
-  version = "0.13.2"
+  required_providers {
+    version = "0.13.2"
+  }
 }
