@@ -1,6 +1,8 @@
-# provider provisions here
 terraform {
   required_providers {
-    version = "0.13.2"
+    mycloud = {
+      source  = "hashicorp/aws"
+      version = ">= 0.11.0"
+    }
   }
 }
