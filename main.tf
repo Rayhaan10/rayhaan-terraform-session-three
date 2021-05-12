@@ -1,6 +1,6 @@
 #resource convisions here
 
 resource "random_pet" "rayray" {
-  prefix = var.prefix
   count  = 3
+  prefix = var.prefix[count.index]
 }
