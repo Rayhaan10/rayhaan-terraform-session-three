@@ -1,6 +1,3 @@
-terraform {
-  version = "0.13.2"
-}
-
+#resource convisions here
 resource "random_pet" "rayray" {
 }
