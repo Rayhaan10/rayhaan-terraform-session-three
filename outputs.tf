@@ -1,11 +1,10 @@
 #output values here
 
-output "random_pet_id" {
-  description = "random pet id"
-  value       = random_pet.rayray[*]
+
+output "pet_names-for_each" {
+  value = [for i in keys(random_pet.pet-for_each) : random_pet.pet-for_each[i].id]
 }
 
-
-output "random_name" {
-  value = random_pet.rayray
+output "pet_names-for_each2" {
+  value = random_pet.pet-for_each["${var.prefix[1]}"].id
 }
