@@ -12,5 +12,7 @@ echo "enter a password:\c"
 
 read password
 
+set -- $username $password
+
 echo $username 
 echo $password
